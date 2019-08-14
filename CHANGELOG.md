@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/lentoo/taro-skeleton/compare/1.0.4...1.0.5) (2019-08-14)
+
+
+### Bug Fixes
+
+* 🐛 row add key ([2cee2c4](https://github.com/lentoo/taro-skeleton/commit/2cee2c4))
+
+
+
 ## [1.0.4](https://github.com/lentoo/taro-skeleton/compare/1.0.3...1.0.4) (2019-08-14)
 
 

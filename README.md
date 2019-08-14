@@ -60,6 +60,11 @@ export default class Index extends Component {
 }
 ```
 
+## 效果截图
+![image.gif](https://img10.360buyimg.com/img/jfs/t1/69605/37/7112/458346/5d5384ebEce35839a/36470a9fd5237916.gif)
+
+
+
 ## API
 
 ### Props
@@ -76,3 +81,6 @@ export default class Index extends Component {
 | action | 显示右边操作按钮占位图 | `boolean` | `false` | - |
 | loading | 是否显示占位图，传`false`时会展示子组件内容 | `boolean` | `true` | - 
 | animate | 是否开启动画 | `boolean` | `true` | - |
+
+
+## [更新日志](https://github.com/lentoo/taro-skeleton/blob/master/CHANGELOG.md)
