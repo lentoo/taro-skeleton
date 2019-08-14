@@ -4,3 +4,9 @@ deploy_versions/
 node_modules/
 .DS_Store
 ./src/pages
+taro-skeleton.zip
+screen
+.editorconfig
+.eslintrc
+tsconfig.json
+yarn.lock
