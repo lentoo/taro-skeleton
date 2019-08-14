@@ -1,0 +1,51 @@
+
+$skeleton-animation-duration: 1.2s;
+$skeleton-title-height: 30px;
+$skeleton-row-height: 24px;
+$skeleton-action-height: 60px;
+$skeleton-aciton-width: 120px;
+$skeleton-aciton-mr: 20px;
+$skeleton-row-margin-top: 20px;
+$skeleton-row-background-color: #f2f3f5;
+.skeleton {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  background: #fff;
+  &-content {
+    flex: 1;
+    padding-top: 16px;
+  }
+  &-row, &-title, &-action {
+    height: $skeleton-row-height;
+    background-color: $skeleton-row-background-color;
+  }
+  &-title {
+    height: $skeleton-title-height;
+    margin-bottom: $skeleton-row-margin-top;
+  }
+  &-action {
+    margin-left: $skeleton-aciton-mr;
+    height: $skeleton-action-height;
+    width: $skeleton-aciton-width;
+  }
+  &-row:not(:first-child) {
+    margin-top: $skeleton-row-margin-top;
+  }
+  &-avatar {
+    background-color: $skeleton-row-background-color;
+    margin-right: 30px;
+    &-round {
+      border-radius: 50%;
+    }
+  }
+  
+  &-animate {
+    animation: skeleton-blink $skeleton-animation-duration ease-in-out infinite;
+  }
+}
+@keyframes skeleton-blink {
+  50% {
+    opacity: .6;
+  }
+}
