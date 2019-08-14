@@ -110,7 +110,7 @@ export default function Skeleton (props: SkeletonProps) {
     if (props.row) {
       const rowArray = Array.apply(null, Array(props.row)).map((item, index) => index)
       const Rows = rowArray.map((item, index) => {
-        return <View className='skeleton-row' style={`width: ${addUnit(getRowWidth(index))}`}/>
+        return <View key={item} className='skeleton-row' style={`width: ${addUnit(getRowWidth(index))}`}/>
       })
       return <View className='skeleton-rows'>{Rows}</View>
     }
