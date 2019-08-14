@@ -9,12 +9,12 @@ export type SkeletonProps = {
    * @description 段落占位图行数
    * @type {number}
    */
-  row: number
+  row?: number
   /**
    * @description 是否显示占位图，传 `false` 时会展示子组件内容
    * @type {boolean}
    */
-  loading: boolean
+  loading?: boolean
   /**
    * @description 是否显示标题占位图
    * @type {boolean}
@@ -24,7 +24,7 @@ export type SkeletonProps = {
    * @description 标题占位图宽度
    * @type {(string | number)}
    */
-  titleWidth: string | number
+  titleWidth?: string | number
   /**
    * @description 是否显示头像占位图
    * @type {boolean}
@@ -34,12 +34,12 @@ export type SkeletonProps = {
    * @description avatar-size	
    * @type {number}
    */
-  avatarSize: number
+  avatarSize?: number
   /**
    * @description 头像占位图形状，可选值为 `square` 、`round` 默认值：round
    * @type {avatarShapeOptions}
    */
-  avatarShape: avatarShapeOptions
+  avatarShape?: avatarShapeOptions
   /**
    * @description 是否显示右边操作按钮占位图
    * @type {boolean}
@@ -49,12 +49,12 @@ export type SkeletonProps = {
    * @description 是否开启动画
    * @type {boolean}
    */
-  animate: boolean
+  animate?: boolean
   /**
    * @description 段落占位图宽度，可传数组来设置每一行的宽度
    * @type {(number | string | (number | string)[])}
    */
-  rowWidth: number | string | (number | string)[]
+  rowWidth?: number | string | (number | string)[]
   /**
    * @description 子组件内容
    * @type {JSX.Element}

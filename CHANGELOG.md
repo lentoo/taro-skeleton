@@ -1,4 +1,4 @@
-## 1.0.2 (2019-08-14)
+## [1.0.3](https://github.com/lentoo/taro-skeleton/compare/7d6d48c...1.0.3) (2019-08-14)
 
 
 ### Features
