@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  &-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  &-info {
+    flex: 1;
+    margin: 0 20px;
+    &-title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    &-desc {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  }
+  &-btn {
+    width: 120px;
+    height: 60px;
+    font-size: 26px;
+  }
+}

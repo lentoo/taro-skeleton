@@ -53,7 +53,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Skeleton title avatar row={2} action></Skeleton>
+        <Skeleton loading={this.state.loading} title avatar row={2} action></Skeleton>
       </View>
     )
   }

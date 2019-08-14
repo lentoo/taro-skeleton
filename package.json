@@ -1,7 +1,6 @@
 {
   "name": "taro-skeleton",
   "version": "1.0.0",
-  "private": true,
   "description": "基于Taro的一个骨架屏组件，简单易用",
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",
@@ -24,6 +23,7 @@
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
     "build:quickapp": "taro build --type quickapp",
+    "build:ui": "TARO_BUILD_TYPE=ui taro build --ui",
     "dev:weapp": "npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
