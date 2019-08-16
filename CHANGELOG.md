@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/lentoo/taro-skeleton/compare/1.0.6...1.0.7) (2019-08-16)
+
+
+### Features
+
+* 🎸 支持 row 占位图自定义宽跟高 ([d3003f5](https://github.com/lentoo/taro-skeleton/commit/d3003f5)), closes [#1](https://github.com/lentoo/taro-skeleton/issues/1)
+
+
+
 ## [1.0.6](https://github.com/lentoo/taro-skeleton/compare/1.0.5...1.0.6) (2019-08-14)
 
 

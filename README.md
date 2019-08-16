@@ -72,9 +72,9 @@ export default class Index extends Component {
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 |------|------|------|------|------|
 | row | 段落占位图行数 | `number` | `0` | - |
-| row-width | 段落占位图宽度，可传数组来设置每一行的宽度 | `number | string | number[] | string[]` | `100%` | - |
-| row-height | 段落占位图高度，可传数组来设置每一行的高度 | `number | string | number[] | string[]` | `24` | - |
-| rowProps | 用于定制 row 的宽跟高，可传数组来设置每一行的宽跟高，如果配置了该属性，则 row-height 配置无效 | ` RowProps | RowProps[]` | - | - |
+| row-width | 段落占位图宽度，可传数组来设置每一行的宽度 | `number/string/number[]/string[]` | `100%` | - |
+| row-height | 段落占位图高度，可传数组来设置每一行的高度 | `number/string/number[]/string[]` | `24` | 1.0.7 |
+| rowProps | 用于定制 row 的宽跟高，可传数组来设置每一行的宽跟高，如果配置了该属性，则 row-height 配置无效 | `RowProps/RowProps[]` | - | 1.0.7 |
 | title | 是否显示标题占位图 | `boolean` | `false` | - |
 | title-width | 标题占位图宽度 | `number | string` | `40%` | - |
 | avatar | 是否显示头像占位图 | `boolean` | `false` | - |
@@ -88,7 +88,7 @@ export default class Index extends Component {
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 |------|------|------|------|------|
-| width | 段落占位图宽数 | `number | string` | - | - |
-| height | 段落占位图高度 | `number | string` | - | - |
+| width | 段落占位图宽数 | `number/string` | - | - |
+| height | 段落占位图高度 | `number/string` | - | - |
 
 ## [更新日志](https://github.com/lentoo/taro-skeleton/blob/master/CHANGELOG.md)
