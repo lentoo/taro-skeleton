@@ -1,5 +1,5 @@
 # Skeleton 骨架屏
-基于 taro 到一个简单易用到骨架屏组件
+基于 taro 到一个简单易用的骨架屏组件
 
 ### 支持多端平台使用 
 1. 微信小程序
@@ -61,7 +61,7 @@ export default class Index extends Component {
 ```
 
 ## 效果截图
-![image.gif](https://img10.360buyimg.com/img/jfs/t1/69605/37/7112/458346/5d5384ebEce35839a/36470a9fd5237916.gif)
+![image.gif](https://img10.360buyimg.com/img/jfs/t1/48838/36/7883/293459/5d567421E057d32f0/55d7584d15cc4c3e.gif)
 
 
 
@@ -73,14 +73,22 @@ export default class Index extends Component {
 |------|------|------|------|------|
 | row | 段落占位图行数 | `number` | `0` | - |
 | row-width | 段落占位图宽度，可传数组来设置每一行的宽度 | `number | string | number[] | string[]` | `100%` | - |
+| row-height | 段落占位图高度，可传数组来设置每一行的高度 | `number | string | number[] | string[]` | `24` | - |
+| rowProps | 用于定制 row 的宽跟高，可传数组来设置每一行的宽跟高，如果配置了该属性，则 row-height 配置无效 | ` RowProps | RowProps[]` | - | - |
 | title | 是否显示标题占位图 | `boolean` | `false` | - |
 | title-width | 标题占位图宽度 | `number | string` | `40%` | - |
 | avatar | 是否显示头像占位图 | `boolean` | `false` | - |
-| avatar-size | 头像占位图大小 | `number | string` | `90px` | - |
+| avatar-size | 头像占位图大小 | `number | string` | `90` | - |
 | avatar-shape | 头像占位图形状，可选值为`square` | `string` | `round` | - |
 | action | 显示右边操作按钮占位图 | `boolean` | `false` | - |
 | loading | 是否显示占位图，传`false`时会展示子组件内容 | `boolean` | `true` | - 
 | animate | 是否开启动画 | `boolean` | `true` | - |
 
+### RowProps
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+|------|------|------|------|------|
+| width | 段落占位图宽数 | `number | string` | - | - |
+| height | 段落占位图高度 | `number | string` | - | - |
 
 ## [更新日志](https://github.com/lentoo/taro-skeleton/blob/master/CHANGELOG.md)

@@ -45,11 +45,12 @@ export default class Index extends Component {
         <Text>修改 头像占位图 大小 </Text>
         <Skeleton title row={2} rowWidth={['80%', '50%']} avatar avatarSize={120} avatarShape='square'></Skeleton>
         
-
-        <Text>关闭动画, 修改标题占位图宽度</Text>
-        <Skeleton title titleWidth={'60%'} animate={false} row={2} rowWidth={['80%', '50%']} avatar></Skeleton>
-
-
+        <Text>自定义 row 的宽高</Text>
+        <Skeleton row={1} rowProps={[{
+          width: '50%',
+          height: '50px'
+        }]} avatar></Skeleton>
+        
         <Switch checked={this.state.checked} onChange={value => {
           console.log('value', value);
           this.setState({
