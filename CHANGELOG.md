@@ -1,3 +1,16 @@
+## [1.0.9](https://github.com/lentoo/taro-skeleton/compare/1.0.8...1.0.9) (2019-08-28)
+
+
+### Features
+
+* 🎸 新增骨架屏组件动画类型 ([e5b864b](https://github.com/lentoo/taro-skeleton/commit/e5b864b))
+
+
+
+## [1.0.8](https://github.com/lentoo/taro-skeleton/compare/1.0.7...1.0.8) (2019-08-16)
+
+
+
 ## [1.0.7](https://github.com/lentoo/taro-skeleton/compare/1.0.6...1.0.7) (2019-08-16)
 
 
