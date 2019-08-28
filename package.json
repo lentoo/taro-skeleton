@@ -1,6 +1,6 @@
 {
   "name": "taro-skeleton",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "基于Taro的一个骨架屏组件，简单易用",
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",
