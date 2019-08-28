@@ -44,6 +44,9 @@ export default class Index extends Component {
 
         <Text>修改 头像占位图 大小 </Text>
         <Skeleton title row={2} rowWidth={['80%', '50%']} avatar avatarSize={120} avatarShape='square'></Skeleton>
+
+        <Text>修改 动画模式 </Text>
+        <Skeleton animateName='elastic' title row={2} rowWidth={['80%', '50%']}></Skeleton>
         
         <Text>自定义 row 的宽高</Text>
         <Skeleton row={1} rowProps={[{

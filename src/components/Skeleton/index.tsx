@@ -43,9 +43,9 @@ export interface SkeletonProps {
   avatarSize?: number
   /**
    * @description 头像占位图形状，可选值为 `square` 、`round` 默认值：round
-   * @type {avatarShapeOptions}
+   * @type {AvatarShapeOptions}
    */
-  avatarShape?: avatarShapeOptions
+  avatarShape?: AvatarShapeOptions
   /**
    * @description 是否显示右边操作按钮占位图
    * @type {boolean}
@@ -56,6 +56,12 @@ export interface SkeletonProps {
    * @type {boolean}
    */
   animate?: boolean
+  /**
+   * @description 动画名称
+   * @type {AnimateName}
+   * @memberof SkeletonProps
+   */
+  animateName?: AnimateName
   /**
    * @description 段落占位图宽度，可传数组来设置每一行的宽度
    * @type {(number | string | (number | string)[])}
@@ -90,7 +96,8 @@ export interface RowProps {
   width: string | number
   height: string | number
 }
-export type avatarShapeOptions = 'round' | 'square'
+export type AnimateName = 'blink' | 'elastic'
+export type AvatarShapeOptions = 'round' | 'square'
 const DEFAULT_ROW_WIDTH = '100%';
 export default function Skeleton (props: SkeletonProps) {
 
@@ -170,7 +177,8 @@ export default function Skeleton (props: SkeletonProps) {
   }
 
   const rootClass = classnames(['skeleton', {
-    'skeleton-animate': props.animate
+    'skeleton-animate-blink': props.animate && props.animateName === 'blink',
+    'skeleton-animate-elastic': props.animate && props.animateName === 'elastic'
   }])
   return (
     <View className={rootClass}>
@@ -191,5 +199,6 @@ Skeleton.defaultProps = {
   rowWidth: '100%',
   rowHeight: 24,
   titleWidth: '40%',
-  avatarShape: 'round'
+  avatarShape: 'round',
+  animateName: 'blink'
 }

@@ -61,7 +61,7 @@ export default class Index extends Component {
 ```
 
 ## 效果截图
-![image.gif](https://img10.360buyimg.com/img/jfs/t1/48838/36/7883/293459/5d567421E057d32f0/55d7584d15cc4c3e.gif)
+![image.gif](https://img10.360buyimg.com/img/jfs/t1/63219/14/8586/484603/5d666c6bE4432c8e7/aa1d8d800249a9e5.gif)
 
 
 
@@ -76,13 +76,14 @@ export default class Index extends Component {
 | row-height | 段落占位图高度，可传数组来设置每一行的高度 | `number/string/number[]/string[]` | `24` | 1.0.7 |
 | rowProps | 用于定制 row 的宽跟高，可传数组来设置每一行的宽跟高，如果配置了该属性，则 row-height 配置无效 | `RowProps/RowProps[]` | - | 1.0.7 |
 | title | 是否显示标题占位图 | `boolean` | `false` | - |
-| title-width | 标题占位图宽度 | `number | string` | `40%` | - |
+| title-width | 标题占位图宽度 | `number/string` | `40%` | - |
 | avatar | 是否显示头像占位图 | `boolean` | `false` | - |
-| avatar-size | 头像占位图大小 | `number | string` | `90` | - |
+| avatar-size | 头像占位图大小 | `number/string` | `90` | - |
 | avatar-shape | 头像占位图形状，可选值为`square` | `string` | `round` | - |
 | action | 显示右边操作按钮占位图 | `boolean` | `false` | - |
 | loading | 是否显示占位图，传`false`时会展示子组件内容 | `boolean` | `true` | - 
 | animate | 是否开启动画 | `boolean` | `true` | - |
+| animateName | 动画类型，可选值为`elastic` | `string` | `blink` | 1.3.9 |
 
 ### RowProps
 

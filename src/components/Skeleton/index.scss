@@ -1,5 +1,6 @@
 
-$skeleton-animation-duration: 1.2s;
+$skeleton-animation-blink-duration: 1.2s;
+$skeleton-animation-elastic-duration: .8s;
 $skeleton-title-height: 30px;
 $skeleton-row-height: 24px;
 $skeleton-action-height: 60px;
@@ -41,11 +42,30 @@ $skeleton-row-background-color: #f2f3f5;
   }
   
   &-animate {
-    animation: skeleton-blink $skeleton-animation-duration ease-in-out infinite;
+    &-blink {
+      animation: skeleton-blink $skeleton-animation-blink-duration ease-in-out infinite;
+    }
+    &-elastic {
+      .skeleton {
+        &-row, &-title {
+          transform-origin: left center;
+          
+          animation: skeleton-elastic $skeleton-animation-elastic-duration ease-in-out infinite;
+        }
+      }
+    }
   }
 }
 @keyframes skeleton-blink {
   50% {
     opacity: .6;
   }
+}
+@keyframes skeleton-elastic {
+  50% {
+    transform: scaleX(.3);
+  }
+  // to {
+  //   transform: scaleX(0);
+  // }
 }
