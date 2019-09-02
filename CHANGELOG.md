@@ -1,3 +1,12 @@
+## [1.0.10](https://github.com/lentoo/taro-skeleton/compare/1.0.9...1.0.10) (2019-09-02)
+
+
+### Bug Fixes
+
+* 🐛 修复提示npm包不存在taro-skeleton ([e9e03c7](https://github.com/lentoo/taro-skeleton/commit/e9e03c7)), closes [#2](https://github.com/lentoo/taro-skeleton/issues/2)
+
+
+
 ## [1.0.9](https://github.com/lentoo/taro-skeleton/compare/1.0.8...1.0.9) (2019-08-28)
 
 
