@@ -65,7 +65,7 @@ export default class Index extends Component {
 ```
 
 ## 效果截图
-![image.gif](https://img10.360buyimg.com/img/jfs/t1/63219/14/8586/484603/5d666c6bE4432c8e7/aa1d8d800249a9e5.gif)
+![image.gif](https://img10.360buyimg.com/img/jfs/t1/60232/20/13975/296420/5db7e244E05a0d555/d7724d0dd3af11ec.gif)
 
 
 

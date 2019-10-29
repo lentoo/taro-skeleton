@@ -1,3 +1,21 @@
+## [1.0.12](https://github.com/lentoo/taro-skeleton/compare/1.0.11-0...1.0.12) (2019-10-29)
+
+
+### Features
+
+* 🎸 新增纵向排列方式 ([9b75e54](https://github.com/lentoo/taro-skeleton/commit/9b75e54)), closes [#3](https://github.com/lentoo/taro-skeleton/issues/3) [#5](https://github.com/lentoo/taro-skeleton/issues/5)
+
+
+
+## [1.0.11-0](https://github.com/lentoo/taro-skeleton/compare/1.0.10...1.0.11-0) (2019-09-02)
+
+
+### Features
+
+* 🎸 新增 pre-commit 功能 ([0d4b66e](https://github.com/lentoo/taro-skeleton/commit/0d4b66e))
+
+
+
 ## [1.0.10](https://github.com/lentoo/taro-skeleton/compare/1.0.9...1.0.10) (2019-09-02)
 
 
