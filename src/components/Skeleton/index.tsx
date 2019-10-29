@@ -12,6 +12,12 @@ import './index.scss'
  */
 export interface SkeletonProps {
   /**
+   * @description 排列方向  横向 或者 纵向， 默认 row
+   * @type {('row' | 'column')}
+   * @memberof SkeletonProps
+   */
+  type?: 'row' | 'column'
+  /**
    * @description 段落占位图行数
    * @type {number}
    */
@@ -160,7 +166,7 @@ export default function Skeleton (props: SkeletonProps) {
     return null
   }
   const renderAction = (): JSX.Element | null => {
-    if (props.action) {
+    if (props.action && props.type !== 'column') {
       return <View className='skeleton-action'/>
     }
     return null
@@ -177,6 +183,7 @@ export default function Skeleton (props: SkeletonProps) {
   }
 
   const rootClass = classnames(['skeleton', {
+    [`skeleton-type-${props.type}`]: true,
     'skeleton-animate-blink': props.animate && props.animateName === 'blink',
     'skeleton-animate-elastic': props.animate && props.animateName === 'elastic'
   }])
@@ -191,8 +198,12 @@ export default function Skeleton (props: SkeletonProps) {
     </View>
   )
 }
+Skeleton.options = {
+  addGlobalClass: true
+}
 Skeleton.defaultProps = {
   avatarSize: 90,
+  type: 'row',
   row: 0,
   loading: true,
   animate: true,

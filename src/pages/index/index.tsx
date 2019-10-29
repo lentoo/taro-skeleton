@@ -42,8 +42,14 @@ export default class Index extends Component {
         <Text>修改 头像占位图 样式 </Text>
         <Skeleton title row={2} rowWidth={['80%', '50%']} avatar avatarShape='square'></Skeleton>
 
-        <Text>修改 头像占位图 大小 </Text>
-        <Skeleton title row={2} rowWidth={['80%', '50%']} avatar avatarSize={120} avatarShape='square'></Skeleton>
+        <Text>纵向排练</Text>
+        <View className="column-skeleton">
+          <Skeleton type='column' title titleWidth={'80%'} avatar></Skeleton>
+          <Skeleton type='column' row={1} rowWidth={'70%'} avatar></Skeleton>
+          <Skeleton type='column' title titleWidth={'60%'} avatar></Skeleton>
+          <Skeleton type='column' title titleWidth={'50%'} avatar></Skeleton>
+          <Skeleton type='column' title titleWidth={'100%'} avatar></Skeleton>
+        </View>
 
         <Text>修改 动画模式 </Text>
         <Skeleton animateName='elastic' title row={2} rowWidth={['80%', '50%']}></Skeleton>

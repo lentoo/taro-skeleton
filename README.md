@@ -29,7 +29,11 @@ import Skeleton from 'taro-skeleton'
 ``` jsx
 <Skeleton title avatar row={3} />
 ```
-
+### 不同排列方式
+通过`type`属性来控制排列方式，默认值为 `row`，可选`column`
+``` jsx
+<Skeleton type='column' title titleWidth={'80%'} avatar />
+```
 ### 展示子组件
 
 将`loading`属性设置成`false`表示内容加载完成，此时会隐藏占位图，并显示`Skeleton`的子组件
@@ -71,6 +75,7 @@ export default class Index extends Component {
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 |------|------|------|------|------|
+| type | 定义排列方式  | `row/column` | `row` | 1.0.12 |
 | row | 段落占位图行数 | `number` | `0` | - |
 | row-width | 段落占位图宽度，可传数组来设置每一行的宽度 | `number/string/number[]/string[]` | `100%` | - |
 | row-height | 段落占位图高度，可传数组来设置每一行的高度 | `number/string/number[]/string[]` | `24` | 1.0.7 |
