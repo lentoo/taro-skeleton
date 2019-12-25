@@ -7,3 +7,4 @@ node_modules/
 yarn-error.log
 taro-skeleton.zip
 screen
+package-lock.json
