@@ -12,9 +12,6 @@ export default class Index extends Component {
    * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
-  config: Config = {
-    navigationBarTitleText: '首页'
-  }
   state = {
     loading: true,
     checked: false
@@ -22,10 +19,15 @@ export default class Index extends Component {
 
   componentWillMount () { }
 
+
   componentDidMount () { }
 
   componentWillUnmount () { }
 
+  config: Config = {
+    navigationBarTitleText: '首页'
+  }
+  
   componentDidShow () { }
 
   componentDidHide () { }
@@ -43,12 +45,12 @@ export default class Index extends Component {
         <Skeleton title row={2} rowWidth={['80%', '50%']} avatar avatarShape='square'></Skeleton>
 
         <Text>纵向排练</Text>
-        <View className="column-skeleton">
-          <Skeleton type='column' title titleWidth={'80%'} avatar></Skeleton>
-          <Skeleton type='column' row={1} rowWidth={'70%'} avatar></Skeleton>
-          <Skeleton type='column' title titleWidth={'60%'} avatar></Skeleton>
-          <Skeleton type='column' title titleWidth={'50%'} avatar></Skeleton>
-          <Skeleton type='column' title titleWidth={'100%'} avatar></Skeleton>
+        <View className='column-skeleton'>
+          <Skeleton type='column' title titleWidth='80%' avatar></Skeleton>
+          <Skeleton type='column' row={1} rowWidth='70%' avatar></Skeleton>
+          <Skeleton type='column' title titleWidth='60%' avatar></Skeleton>
+          <Skeleton type='column' title titleWidth='50%' avatar></Skeleton>
+          <Skeleton type='column' title titleWidth='100%' avatar></Skeleton>
         </View>
 
         <Text>修改 动画模式 </Text>
@@ -58,14 +60,16 @@ export default class Index extends Component {
         <Skeleton row={1} rowProps={[{
           width: '50%',
           height: '50px'
-        }]} avatar></Skeleton>
+        }]} avatar
+        ></Skeleton>
         
         <Switch checked={this.state.checked} onChange={value => {
           console.log('value', value);
           this.setState({
             loading: !value.detail.value
           })
-        }}>显示子组件内容</Switch>
+        }}
+        >显示子组件内容</Switch>
         <Skeleton loading={this.state.loading} title avatar row={1} rowWidth={['90%', '50%']} action>
           <View className='item'>
             <View className='item-img'>
