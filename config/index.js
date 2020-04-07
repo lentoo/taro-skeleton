@@ -63,6 +63,10 @@ const config = {
             'ios >= 8'
           ]
         }
+      },
+      pxtransform: {
+        enable: true,
+        config: {}
       }
     }
   }
@@ -81,7 +85,7 @@ if (process.env.TARO_BUILD_TYPE === 'ui') {
         path: path.join(process.cwd(), 'dist', 'h5'),
         filename: 'index.js',
         libraryTarget: 'umd',
-        library: 'taro-ui-sample'
+        library: 'taro-skeleton'
       },
       externals: {
         nervjs: 'commonjs2 nervjs',
