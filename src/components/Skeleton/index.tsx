@@ -1,4 +1,4 @@
-import { View } from '@tarojs/components'
+import { View, Block } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import classnames from 'classnames'
 import './index.scss'
@@ -108,7 +108,7 @@ const DEFAULT_ROW_WIDTH = '100%';
 export default function Skeleton (props: SkeletonProps) {
 
   if (!props.loading) {
-    return <View>{props.children}</View>
+    return <Block>{props.children}</Block>
   }
 
   const getRowWidth = (index: number) => {
