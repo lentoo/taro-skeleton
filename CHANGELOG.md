@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/lentoo/taro-skeleton/compare/1.1.3...1.1.4) (2020-04-08)
+
+
+### Bug Fixes
+
+* 🐛 删除多渲染的一个View标签。改为空标签 ([9607939](https://github.com/lentoo/taro-skeleton/commit/9607939470b1f2947f3730bc5830b6bd6d12fd85))
+
+
+
 ## [1.1.3](https://github.com/lentoo/taro-skeleton/compare/1.1.0...1.1.3) (2020-04-07)
 
 
