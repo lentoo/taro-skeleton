@@ -43,7 +43,7 @@ export interface SkeletonProps {
    */
   avatar?: boolean
   /**
-   * @description avatar-size	
+   * @description avatar-size
    * @type {number}
    */
   avatarSize?: number
@@ -89,6 +89,11 @@ export interface SkeletonProps {
    * @description 子组件内容
    * @type {JSX.Element}
    */
+  /**
+   * @description skeleton-content的对齐方式，默认center
+   * @type {('left' | 'center' | 'right')}
+   */
+  contentAlignStyle?: 'left' | 'center' | 'right'
   children?: JSX.Element
 }
 /**
@@ -182,7 +187,7 @@ export default function Skeleton (props: SkeletonProps) {
     return null
   }
 
-  const rootClass = classnames(['skeleton', {
+  const rootClass = classnames(['skeleton skeleton-custom-class', {
     [`skeleton-type-${props.type}`]: true,
     'skeleton-animate-blink': props.animate && props.animateName === 'blink',
     'skeleton-animate-elastic': props.animate && props.animateName === 'elastic'
@@ -190,7 +195,7 @@ export default function Skeleton (props: SkeletonProps) {
   return (
     <View className={rootClass}>
       {renderAvatar()}
-      <View className='skeleton-content'>
+      <View className='skeleton-content' style={{textAlign: props.contentAlignStyle}}>
         {renderTitle()}
         {renderRows()}
       </View>
@@ -211,5 +216,8 @@ Skeleton.defaultProps = {
   rowHeight: 24,
   titleWidth: '40%',
   avatarShape: 'round',
-  animateName: 'blink'
+  animateName: 'blink',
+  contentAlignStyle: 'center'
 }
+
+Skeleton.externalClasses = ['skeleton-custom-class']

@@ -98,6 +98,7 @@ export default class Index extends Component {
 | loading | 是否显示占位图，传`false`时会展示子组件内容 | `boolean` | `true` | - 
 | animate | 是否开启动画 | `boolean` | `true` | - |
 | animateName | 动画类型，可选值为`elastic` | `string` | `blink` | 1.3.9 |
+| contentAlignStyle | 内部内容对齐方式，可选值为 | `left |center| right` | `center` |-
 
 ### RowProps
 
