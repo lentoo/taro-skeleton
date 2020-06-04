@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/lentoo/taro-skeleton/compare/1.1.4...1.2.0) (2020-06-04)
+
+
+### Features
+
+* "新增自定义类名和部分样式调整" ([5826ef2](https://github.com/lentoo/taro-skeleton/commit/5826ef2ee0d82622c56bf5440e1eac942b3ec39b))
+* 🎸 优化自定义类名，补充文档 ([ffa6e31](https://github.com/lentoo/taro-skeleton/commit/ffa6e31248d432e24d1b6c14fec40340f95f4a59)), closes [#15](https://github.com/lentoo/taro-skeleton/issues/15)
+
+
+
 ## [1.1.4](https://github.com/lentoo/taro-skeleton/compare/1.1.3...1.1.4) (2020-04-08)
 
 
@@ -95,8 +105,8 @@
 
 ### Features
 
-* 🎸 新增骨架屏组件 ([3ee7849](https://github.com/lentoo/taro-skeleton/commit/3ee7849111e0e95a6f906aa37572f30f9d471596))
 * 🎸 init project ([7d6d48c](https://github.com/lentoo/taro-skeleton/commit/7d6d48c9f2ce858efc5ae79f5a2d0ac683bdafee))
+* 🎸 新增骨架屏组件 ([3ee7849](https://github.com/lentoo/taro-skeleton/commit/3ee7849111e0e95a6f906aa37572f30f9d471596))
 
 
 
