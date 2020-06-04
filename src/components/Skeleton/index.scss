@@ -61,7 +61,7 @@ $skeleton-row-background-color: #f2f3f5;
       border-radius: 50%;
     }
   }
-  
+
   &-animate {
     &-blink {
       animation: skeleton-blink $skeleton-animation-blink-duration ease-in-out infinite;
@@ -70,7 +70,7 @@ $skeleton-row-background-color: #f2f3f5;
       .skeleton {
         &-row, &-title {
           transform-origin: left center;
-          
+
           animation: skeleton-elastic $skeleton-animation-elastic-duration ease-in-out infinite;
         }
       }
