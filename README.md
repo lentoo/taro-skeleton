@@ -98,8 +98,8 @@ export default class Index extends Component {
 | loading | 是否显示占位图，传`false`时会展示子组件内容 | `boolean` | `true` | - 
 | animate | 是否开启动画 | `boolean` | `true` | - |
 | animateName | 动画类型，可选值为`elastic` | `string` | `blink` | 1.3.9 |
-| contentAlignStyle | 内部内容对齐方式，可选值为 | `left |center| right` | `center` |-
-
+| contentAlignStyle | 内部内容对齐方式，可选值为 | `left/center/right` | `center` | 1.4.0
+| skeleton-custom-class | 自定义类名，通过该类名可以影响内部样式 | `string` | `` | 1.4.0 |
 ### RowProps
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |

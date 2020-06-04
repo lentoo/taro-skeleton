@@ -49,7 +49,7 @@ export default class Index extends Component {
           <Skeleton type='column' title titleWidth='80%' avatar></Skeleton>
           <Skeleton type='column' row={1} rowWidth='70%' avatar></Skeleton>
           <Skeleton type='column' title titleWidth='60%' avatar></Skeleton>
-          <Skeleton type='column' title titleWidth='50%' avatar></Skeleton>
+          <Skeleton type='column' title titleWidth='50%' avatar contentAlignStyle='right'></Skeleton>
           <Skeleton type='column' title titleWidth='100%' avatar></Skeleton>
         </View>
 
@@ -62,6 +62,14 @@ export default class Index extends Component {
           height: '50px'
         }]} avatar
         ></Skeleton>
+        <Text>自定义style</Text>
+        <View className='custom'>
+          <Skeleton row={1} rowProps={[{
+            width: '50%',
+            height: '50px'
+          }]} avatar skeleton-custom-class='custom-class'
+          ></Skeleton>
+        </View>
         
         <Switch checked={this.state.checked} onChange={value => {
           console.log('value', value);

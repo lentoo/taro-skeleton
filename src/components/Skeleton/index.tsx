@@ -1,5 +1,5 @@
 import { View, Block } from '@tarojs/components'
-import Taro from '@tarojs/taro'
+import Taro, { FunctionComponent } from '@tarojs/taro'
 import classnames from 'classnames'
 import './index.scss'
 
@@ -10,7 +10,7 @@ import './index.scss'
  * @export
  * @interface SkeletonProps
  */
-export interface SkeletonProps {
+export interface SkeletonProps extends FunctionComponent  {
   /**
    * @description 排列方向  横向 或者 纵向， 默认 row
    * @type {('row' | 'column')}
@@ -94,6 +94,14 @@ export interface SkeletonProps {
    * @type {('left' | 'center' | 'right')}
    */
   contentAlignStyle?: 'left' | 'center' | 'right'
+
+  /**
+   * @description 自定义类名
+   * @type String
+   * @link http://taro-docs.jd.com/taro/docs/component-style
+   */
+  'skeleton-custom-class'?: string
+
   children?: JSX.Element
 }
 /**
@@ -187,11 +195,11 @@ export default function Skeleton (props: SkeletonProps) {
     return null
   }
 
-  const rootClass = classnames(['skeleton skeleton-custom-class', {
+  const rootClass = classnames('skeleton', 'skeleton-custom-class', {
     [`skeleton-type-${props.type}`]: true,
     'skeleton-animate-blink': props.animate && props.animateName === 'blink',
     'skeleton-animate-elastic': props.animate && props.animateName === 'elastic'
-  }])
+  })
   return (
     <View className={rootClass}>
       {renderAvatar()}
