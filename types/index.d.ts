@@ -1,4 +1,4 @@
-import { FC } from '@tarojs/taro'
+import { FC, ReactChildren } from 'react'
 /**
  * @description Row 属性的宽高
  * @author lentoo
@@ -20,7 +20,7 @@ export type AvatarShapeOptions = 'round' | 'square'
  * @export
  * @interface SkeletonProps
  */
-export interface SkeletonProps extends FC  {
+export interface SkeletonProps  {
   /**
    * @description 排列方向  横向 或者 纵向， 默认 row
    * @type {('row' | 'column')}
@@ -112,5 +112,9 @@ export interface SkeletonProps extends FC  {
    */
   'skeleton-custom-class'?: string
 
-  children?: JSX.Element
+  children: ReactChildren
 }
+
+declare const Skeleton: FC<SkeletonProps>
+
+export default Skeleton

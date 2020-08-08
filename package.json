@@ -9,7 +9,7 @@
 		"taro-skeleton",
 		"skeleton"
 	],
-	"types": "./src/index.tsx",
+	"types": "./types/index.d.ts",
 	"templateInfo": {
 		"name": "default",
 		"typescript": true,
