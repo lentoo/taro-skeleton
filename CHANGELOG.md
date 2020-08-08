@@ -1,3 +1,8 @@
+## [1.2.2](https://github.com/lentoo/taro-skeleton/compare/1.2.1...1.2.2) (2020-08-08)
+## [1.2.1](https://github.com/lentoo/taro-skeleton/compare/1.2.0...1.2.1) (2020-08-08)
+
+* 新增 `index.d.ts` 类型文件，支持 `jsx` 项目智能提示
+
 # [1.2.0](https://github.com/lentoo/taro-skeleton/compare/1.1.4...1.2.0) (2020-06-04)
 
 
