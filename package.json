@@ -15,6 +15,12 @@
 		"typescript": true,
 		"css": "sass"
 	},
+	"files": [
+    "dist",
+    "types",
+    "src/**/interface.ts",
+    "src/**/*.d.ts"
+  ],
 	"pre-commit": {
 		"run": "build:ui"
 	},
