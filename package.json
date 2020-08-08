@@ -1,6 +1,6 @@
 {
 	"name": "taro-skeleton",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "基于Taro的一个骨架屏组件，简单易用",
 	"main": "dist/index.js",
 	"main:h5": "dist/h5/index.js",
@@ -16,11 +16,11 @@
 		"css": "sass"
 	},
 	"files": [
-    "dist",
-    "types",
-    "src/**/interface.ts",
-    "src/**/*.d.ts"
-  ],
+		"dist",
+		"types",
+		"src/**/interface.ts",
+		"src/**/*.d.ts"
+	],
 	"pre-commit": {
 		"run": "build:ui"
 	},
