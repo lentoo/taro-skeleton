@@ -1,7 +1,20 @@
+# [2.0.0](https://github.com/lentoo/taro-skeleton/compare/1.2.2...2.0.0) (2020-09-19)
+
+
+### Features
+
+* 🎸 支持Taro3.0版本 ([7705105](https://github.com/lentoo/taro-skeleton/commit/77051052ab89f3d759a374a1286a0ffc4757a037)), closes [#20](https://github.com/lentoo/taro-skeleton/issues/20) [#21](https://github.com/lentoo/taro-skeleton/issues/21)
+* 🎸 组件优化 ([a3337a1](https://github.com/lentoo/taro-skeleton/commit/a3337a11b474a3cd58d5135e36f0e54c8eeb2f8e))
+
+
+
 ## [1.2.2](https://github.com/lentoo/taro-skeleton/compare/1.2.1...1.2.2) (2020-08-08)
+
+
+
 ## [1.2.1](https://github.com/lentoo/taro-skeleton/compare/1.2.0...1.2.1) (2020-08-08)
 
-* 新增 `index.d.ts` 类型文件，支持 `jsx` 项目智能提示
+
 
 # [1.2.0](https://github.com/lentoo/taro-skeleton/compare/1.1.4...1.2.0) (2020-06-04)
 
