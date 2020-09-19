@@ -48,6 +48,25 @@ import 'taro-skeleton/index.css' // 引入组件样式 - 方式二
 ``` html
 <Skeleton type='column' title titleWidth={'80%'} avatar />
 ```
+### 自定义样式
+通过添加自定义`className`类名进行覆盖即可`
+``` scss
+// index.scss
+.custom-class { 
+  .skeleton-avatar, .skeleton-row, .skeleton-title {
+    background-color: red;
+  }
+}
+```
+``` jsx
+// index.jsx
+<Skeleton className='custom-class' row={1} rowProps={[{
+  width: '50%',
+  height: '50px'
+}]} avatar
+></Skeleton>
+```
+
 ### 展示子组件
 
 将`loading`属性设置成`false`表示内容加载完成，此时会隐藏占位图，并显示`Skeleton`的子组件
@@ -104,7 +123,7 @@ export default class Index extends Component {
 | animate | 是否开启动画 | `boolean` | `true` | - |
 | animateName | 动画类型，可选值为`elastic` | `string` | `blink` | 1.3.9 |
 | contentAlignStyle | 内部内容对齐方式，可选值为 | `left/center/right` | `center` | 1.4.0
-| skeleton-custom-class | 自定义类名，通过该类名可以影响内部样式 | `string` | `` | 1.4.0 |
+| designWidth |Taro.pxTransform(px, designWidth) 的designWidth的属性| `number` | `750` | 2.0.0 |
 ### RowProps
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |

@@ -7,6 +7,7 @@ import './index.scss'
 
 
 const DEFAULT_ROW_WIDTH = '100%';
+const DEFAULT_DESIGN_WIDTH = 750
 export default function Skeleton (props: SkeletonProps) {
 
   if (!props.loading) {
@@ -47,7 +48,7 @@ export default function Skeleton (props: SkeletonProps) {
 
 
   const addUnit = (value?: string | number)  => {
-    return typeof value === 'number' ? Taro.pxTransform(value) : value
+    return typeof value === 'number' ? Taro.pxTransform(value, props.designWidth) : value
   }
 
   const renderAvatar = (): JSX.Element | null => {
@@ -84,7 +85,7 @@ export default function Skeleton (props: SkeletonProps) {
     return null
   }
 
-  const rootClass = classnames('skeleton', 'skeleton-custom-class', {
+  const rootClass = classnames('skeleton', props.className, {
     [`skeleton-type-${props.type}`]: true,
     'skeleton-animate-blink': props.animate && props.animateName === 'blink',
     'skeleton-animate-elastic': props.animate && props.animateName === 'elastic'
@@ -109,12 +110,13 @@ Skeleton.defaultProps = {
   row: 0,
   loading: true,
   animate: true,
-  rowWidth: '100%',
+  rowWidth: DEFAULT_ROW_WIDTH,
   rowHeight: 24,
   titleWidth: '40%',
   avatarShape: 'round',
   animateName: 'blink',
-  contentAlignStyle: 'center'
+  contentAlignStyle: 'center',
+  designWidth: DEFAULT_DESIGN_WIDTH
 }
 
-Skeleton.externalClasses = ['skeleton-custom-class']
+// Skeleton.externalClasses = ['skeleton-custom-class']
