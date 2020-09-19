@@ -1,6 +1,7 @@
 # Skeleton 骨架屏
-基于 taro 的一个简单易用的骨架屏组件
+基于 Taro 的一个简单易用的骨架屏组件
 
+> **2.0**版本以上支持 **Taro3.0**
 ### 支持多端平台使用 
 1. 微信小程序
 2. h5
@@ -9,18 +10,20 @@
 5. 支付宝小程序
 6. 其它平台未测试
 
-### 引入
+### 快速上手
+#### 引入组件
 
 ``` javascript
 import Skeleton from 'taro-skeleton'
 ```
-
-### 配置需要额外编译的源码模块
-由于引用 `node_modules` 的模块，默认不会编译，所以需要额外给 H5 配置 `esnextModules`，在 taro 项目的 `config/index.js` 中新增如下配置项：
+#### 引入组件样式的两种方式
+* 全局引入（JS中）
+``` js
+import 'taro-skeleton/index.css' // 引入组件样式 - 方式一
 ```
-h5: {
-  esnextModules: ['taro-skeleton']
-}
+* 全局引入（CSS中）： 在 app.scss 样式文件中 import 组件样式并按照文档说明使用
+``` js
+import 'taro-skeleton/index.css' // 引入组件样式 - 方式二
 ```
 
 ## 代码演示
@@ -29,7 +32,7 @@ h5: {
 
 通过`title`属性显示标题占位图，通过`row`属性配置占位段落行数
 
-``` jsx
+``` html
 <Skeleton title row={3} />
 ```
 
@@ -37,19 +40,19 @@ h5: {
 
 通过`avatar`属性显示头像占位图
 
-``` jsx
+``` html
 <Skeleton title avatar row={3} />
 ```
 ### 不同排列方式
 通过`type`属性来控制排列方式，默认值为 `row`，可选`column`
-``` jsx
+``` html
 <Skeleton type='column' title titleWidth={'80%'} avatar />
 ```
 ### 展示子组件
 
 将`loading`属性设置成`false`表示内容加载完成，此时会隐藏占位图，并显示`Skeleton`的子组件
 
-``` jsx
+``` html
 <Skeleton
   title
   avatar

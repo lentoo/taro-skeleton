@@ -1,5 +1,6 @@
 import { View, Block } from '@tarojs/components'
 import Taro from '@tarojs/taro'
+import React from 'react'
 import classnames from 'classnames'
 import { SkeletonProps } from '../../../types'
 import './index.scss'
@@ -74,7 +75,7 @@ export default function Skeleton (props: SkeletonProps) {
   }
   const renderRows = (): JSX.Element | null => {
     if (props.row) {
-      const rowArray = Array.apply(null, Array(props.row)).map((item, index) => index)
+      const rowArray = Array.apply(null, Array(props.row)).map((_, index) => index)
       const Rows = rowArray.map((item, index) => {
         return <View key={item} className='skeleton-row' style={`width: ${addUnit(getRowWidth(index))};height: ${addUnit(getRowHeight(index))}`}/>
       })
