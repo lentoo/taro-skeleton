@@ -16,14 +16,10 @@
 ``` javascript
 import Skeleton from 'taro-skeleton'
 ```
-#### 引入组件样式的两种方式
+#### 引入组件样式的方式
 * 全局引入（JS中）
 ``` js
-import 'taro-skeleton/dist/index.css' // 引入组件样式 - 方式一
-```
-* 全局引入（CSS中）： 在 app.scss 样式文件中 import 组件样式并按照文档说明使用
-``` js
-import 'taro-skeleton/dist/index.css' // 引入组件样式 - 方式二
+import 'taro-skeleton/dist/index.css' // 引入组件样式
 ```
 
 ## 代码演示
