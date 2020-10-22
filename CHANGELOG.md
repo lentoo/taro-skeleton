@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/lentoo/taro-skeleton/compare/2.0.2...2.0.3) (2020-10-22)
+
+
+### Bug Fixes
+
+* 🐛 类型声明 ([83a30a9](https://github.com/lentoo/taro-skeleton/commit/83a30a919be6ce253cb81a2106ae707db221cae3))
+
 # [2.0.0](https://github.com/lentoo/taro-skeleton/compare/1.2.2...2.0.0) (2020-09-19)
 
 
@@ -123,8 +130,8 @@
 
 ### Features
 
-* 🎸 init project ([7d6d48c](https://github.com/lentoo/taro-skeleton/commit/7d6d48c9f2ce858efc5ae79f5a2d0ac683bdafee))
 * 🎸 新增骨架屏组件 ([3ee7849](https://github.com/lentoo/taro-skeleton/commit/3ee7849111e0e95a6f906aa37572f30f9d471596))
+* 🎸 init project ([7d6d48c](https://github.com/lentoo/taro-skeleton/commit/7d6d48c9f2ce858efc5ae79f5a2d0ac683bdafee))
 
 
 
