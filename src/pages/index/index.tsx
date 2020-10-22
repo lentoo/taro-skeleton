@@ -67,7 +67,7 @@ export default class Index extends Component {
           <Skeleton row={1} rowProps={[{
             width: '50%',
             height: '50px'
-          }]} avatar skeleton-custom-class='custom-class'
+          }]} avatar
           ></Skeleton>
         </View>
         
@@ -78,7 +78,7 @@ export default class Index extends Component {
           })
         }}
         >显示子组件内容</Switch>
-        <Skeleton loading={this.state.loading} title avatar row={1} rowWidth={['90%', '50%']} action>
+        <Skeleton loading={this.state.loading} title avatar row={1} rowWidth={['90%', '50%']} action >
           <View className='item'>
             <View className='item-img'>
               <Image className='item-img' src='https://iconfont.alicdn.com/t/1536041894220.jpg@100h_100w.jpg'></Image>

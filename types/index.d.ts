@@ -21,7 +21,7 @@ export type AvatarShapeOptions = 'round' | 'square'
  * @interface SkeletonProps
  */
 export interface SkeletonProps {
-  className: JSX.ElementClass
+  className?: string
   /**
    * @description 排列方向  横向 或者 纵向， 默认 row
    * @type {('row' | 'column')}
@@ -108,6 +108,7 @@ export interface SkeletonProps {
 
   /**
    * @description 自定义类名
+   * @deprecated 废弃
    * @type String
    * @link http://taro-docs.jd.com/taro/docs/component-style
    */
@@ -115,7 +116,7 @@ export interface SkeletonProps {
 
   designWidth: number
 
-  children: ReactChildren
+  children?: JSX.Element
 }
 
 declare const Skeleton: FC<SkeletonProps>
