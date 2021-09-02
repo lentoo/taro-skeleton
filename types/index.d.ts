@@ -114,7 +114,7 @@ export interface SkeletonProps {
    */
   'skeleton-custom-class'?: string
 
-  designWidth: number
+  designWidth?: number
 
   children?: JSX.Element
 }

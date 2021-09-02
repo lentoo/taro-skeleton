@@ -1,5 +1,6 @@
-import Taro, { Component, Config } from '@tarojs/taro'
+import Taro, { Config } from '@tarojs/taro'
 import Index from './pages/index'
+import React from 'react'
 
 import './app.scss'
 
@@ -9,7 +10,7 @@ import './app.scss'
 //   require('nerv-devtools')
 // }
 
-class App extends Component {
+class App extends React.Component {
 
   /**
    * 指定config的类型声明为: Taro.Config

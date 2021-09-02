@@ -1,9 +1,10 @@
-import Taro, { Component, Config } from '@tarojs/taro'
+import Taro, { Config } from '@tarojs/taro'
+import React from 'react'
 import { View, Text, Button, Image, Switch } from '@tarojs/components'
 import './index.scss'
 import Skeleton from '../../components/Skeleton'
 
-export default class Index extends Component {
+export default class Index extends React.Component {
 
   /**
    * 指定config的类型声明为: Taro.Config
@@ -27,7 +28,7 @@ export default class Index extends Component {
   config: Config = {
     navigationBarTitleText: '首页'
   }
-  
+
   componentDidShow () { }
 
   componentDidHide () { }
@@ -55,7 +56,7 @@ export default class Index extends Component {
 
         <Text>修改 动画模式 </Text>
         <Skeleton animateName='elastic' title row={2} rowWidth={['80%', '50%']}></Skeleton>
-        
+
         <Text>自定义 row 的宽高</Text>
         <Skeleton row={1} rowProps={[{
           width: '50%',
@@ -70,7 +71,7 @@ export default class Index extends Component {
           }]} avatar
           ></Skeleton>
         </View>
-        
+
         <Switch checked={this.state.checked} onChange={value => {
           console.log('value', value);
           this.setState({
